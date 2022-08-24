@@ -37,3 +37,18 @@ Recursive realtion chaiye jiise ki ek kam hum kar le aur sb recursion kare
 
 //processing wala part 3 part ho skte haub 
 //like we wqant to store someting orr count something 
+
+notes
+Any function which calls itself is called
+ recursion. A recursive method solves a 
+ problem by calling a copy of itself to 
+ work on a smaller problem. Each time a 
+ function calls itself with a slightly 
+ simpler version of the original problem. 
+ This sequence of smaller problems must 
+ eventually converge on a base case.
+
+ a case solve karn ahi baki recursion kar de gyo
+ 1 step kar lo 
+baki recursion kar le GYA
+//base case use kar lea jisserki ruk jaye wo
