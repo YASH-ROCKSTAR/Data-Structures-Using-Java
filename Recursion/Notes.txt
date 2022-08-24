@@ -1,0 +1,39 @@
+//THIS IS BOOKISH LANGUAGE
+RECURSION  FUNCTION CALLING ITSELF
+EK KO PEN DIYA USNE MUJHE HE DE DIYA
+NOW
+
+//HUMHE KAISE SAMAJNA HAI CODE KO
+BIG/COMPLEX PROBLEM KA SOLUTION DEPEND ON SAME TYPE OF CHOTTI PROBLEM THE  IT IS CALLED RECURSION..
+EX- 2^N
+2^4=2*2*2*2
+=2*2^3
+2^N=2*2^N-1
+F(N)=2*F(N-1)
+
+EXAMPLE FACTORIAL
+5! =5*4!
+N!=N*(N-1)!
+F(N)=N*F(N-1) 
+
+SO 5!=5*4!
+=4!=4*3!;
+3!=3*2!;
+2!=2*1!;
+1!=1*0!;
+0!=KYU NIKLNA HAI 0! =ZERO HI HOTA HAI
+HERE COMES THE BASE CASE WE AT THE END TO STOP IT WE USE BASE CASE
+2^4=2*2^3
+2^3=2*2^2
+2^2=2*2^1
+2^1=2*2^0=2*1
+YE TO HUMKO PATA HI HAUI KI 2^0 1 HOT HAI
+TO BASE CASE USE KAR SKTE HAI
+YAHI PE RUK JAYE GYA AND BASE CASE WILL BE USED
+Recursion what need?
+Base case –jisse ki runk jaye
+BASE CASE KO RETUERN KARNA ZARURUI HAI 
+Recursive realtion chaiye jiise ki ek kam hum kar le aur sb recursion kare
+
+//processing wala part 3 part ho skte haub 
+//like we wqant to store someting orr count something 
