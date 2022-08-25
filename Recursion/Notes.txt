@@ -52,3 +52,8 @@ Any function which calls itself is called
  1 step kar lo 
 baki recursion kar le GYA
 //base case use kar lea jisserki ruk jaye wo
+
+In recursion functional and parametrise recursion are there so 
+so in parametrise we pass parameter and solve recursion thgrough that 
+
+//In fucntional we want fucntion to calculate and rteturn the result
