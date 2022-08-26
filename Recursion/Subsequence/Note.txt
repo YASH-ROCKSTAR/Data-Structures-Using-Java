@@ -1,0 +1,100 @@
+Subsequene -It is contingous/non contigious sequence which
+follows order
+
+arr=[3,1,2]
+3
+1
+2
+3,1
+1,2
+3,2
+3,1,2
+//order has to be maintined in order 
+in which array is given
+
+Recursive way
+[3,1,2] 
+
+take and not take
+for 3,2
+we take 3 not take 1 and take 2
+3,1
+we take3 we take 1 not take 2
+1,2
+not take take take
+3,1,2
+take take takw
+{} -null
+not take nottake take
+
+
+arr[3,1,2]
+having index 0,1,2
+
+f(ind,arr[]){
+    if(ind>=n){
+        print(arr);
+        return
+    }
+    
+    arr.add(arr[ind]);
+    //case of take
+    f(ind+1,arr);
+    arr.remove(arr[ind])
+    //case of not take
+    f(ind+1,arr)
+}
+//Let assume exaple 3,1,2
+so when we add first elemt 3 in array 
+then take call is executed
+index become 1 and arr contian [3]
+now next call be being called 
+that is 1 and it is added to array subsequence
+//and ind =2 and arr contian [3,2]
+check base condition it is false
+so again call ind 2 and add it into 
+//arr it become [3,1,2]
+now ind become 3 and checking base contion it beocme true
+//now new array [3,1,2] of subsequence
+retrun 
+if i pick up 2 then it becomee 3,1,2
+in not take it become 3,1
+then return it remove 2 
+and become
+[3,1] -f(3,[3,1])
+because 3>=3 base case become true
+again new sunsequence will print [3,1]
+it return and go back to f(2,[3,1])
+//remove 1 from array and and call(f(2,[3]))
+//take will become [3,2]
+and not take become [3]
+ind =3
+and retrun [3,2] in subsequnce
+
+BY RECURSION tree 
+f(0,arr){
+    pick=(f(1,[3]))
+    f(2,[3,2])
+    not pick f(2,[3])
+    //second will be of This
+    pick(3,[3,2]) //return her as bese case become true
+    //return [3,2]
+    not opick(3,[3])
+    //return [3]
+    pick f(3,[3,1,2]) // here ind>=n it will be return
+    not pick become f(3,[3,1]) //her index>=n it will return 
+
+    not pick-f(1,[])
+    //last call will be made which is not take
+    pick-f(2,[1])
+    //here call happen
+    pick(3,[1,2])//retrun 
+    not pick [3,[1]] //retrun
+    not pick f(2,[])
+    //now caal come here
+    so f(3,[2]) //retrun 
+    and (3,[]) //retrun 
+
+}
+
+
