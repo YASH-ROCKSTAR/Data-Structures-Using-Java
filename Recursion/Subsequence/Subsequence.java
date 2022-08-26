@@ -6,7 +6,8 @@ public class Subsequence {
     public static void sub(int ind, List<Integer> li, int[] arr, int n) {
         if (ind >= n) {
             for (Integer c : li) {
-                System.out.println(c + " ");
+                System.out.print(c + " ");
+                System.out.println();
             }
             if (li.size() == 0) {
                 System.out.print(li + " ");
@@ -18,7 +19,7 @@ public class Subsequence {
         sub(ind + 1, li, arr, n);
 
         // not take
-        li.remove(arr[ind]);
+        li.remove(li.size() - 1);
         sub(ind + 1, li, arr, n);
     }
 
@@ -29,3 +30,5 @@ public class Subsequence {
         sub(0, li, arr, n);
     }
 }
+// tc-2^n*N
+// SC=O(N)

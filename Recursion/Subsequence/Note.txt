@@ -95,6 +95,15 @@ f(0,arr){
     so f(3,[2]) //retrun 
     and (3,[]) //retrun 
 
+    //Like question is print 1 subsequence wit sum equal to k 
+    //so technique for 1 subsequence is 
+    //if base case condtion is true return true
+    else return false
+
+    if(f()==true){
+        return;
+    }
+
 }
 
 
